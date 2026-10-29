@@ -1,0 +1,50 @@
+{
+  "name": "QueueLess AI — Civic Errand & Queue Intelligence",
+  "short_name": "QueueLess AI",
+  "description": "AI-assisted service visit preparation and transparent queue intelligence for Lagos, powered by NVIDIA Nemotron on Nebius AI Cloud.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1d",
+  "theme_color": "#0a0f1d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["utilities", "productivity", "government"],
+  "shortcuts": [
+    {
+      "name": "Plan a Visit",
+      "short_name": "Plan",
+      "url": "/plan",
+      "description": "Prepare documents and route for NIS passport or FRSC licence"
+    },
+    {
+      "name": "Lagos Offices Map",
+      "short_name": "Offices",
+      "url": "/locations",
+      "description": "View all verified government offices and radar wait times"
+    },
+    {
+      "name": "Hackathon Showcase",
+      "short_name": "Showcase",
+      "url": "/showcase",
+      "description": "Nebius x NVIDIA Hackathon cover pitch and architecture"
+    }
+  ]
+}

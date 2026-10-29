@@ -1,0 +1,53 @@
+{
+  "corpus_version": "2026-10-21",
+  "pilot_location": {
+    "city": "Lagos",
+    "state": "Lagos State",
+    "country": "Nigeria"
+  },
+  "services": [
+    {
+      "id": "ng_standard_passport_renewal",
+      "name": "Nigerian standard passport renewal",
+      "category": "identity_and_travel",
+      "location_scope": "Lagos, Nigeria; applicant selects a processing centre in the official application portal",
+      "eligibility": ["Renewal or reissue of a standard passport for an applicant applying within Nigeria"],
+      "required_documents": [
+        {"id": "passport_data_page", "label": "Current passport data page", "source_ids": ["nis_passports_requirements"]},
+        {"id": "birth_or_age_evidence", "label": "NPC birth certificate or declaration of age from a High Court", "source_ids": ["nis_passports_requirements"]},
+        {"id": "state_of_origin_certificate", "label": "State of origin certificate", "source_ids": ["nis_passports_requirements"]},
+        {"id": "icao_photo", "label": "ICAO-compliant photograph for upload", "source_ids": ["nis_passport_renewal_steps"]},
+        {"id": "current_passport_booklet", "label": "Current passport booklet for in-person biometric capture", "source_ids": ["nis_passports_requirements"]}
+      ],
+      "preparation_steps": [
+        {"id": "verify_nin", "label": "Verify NIN and ensure personal details match the NIMC record", "source_ids": ["nis_passport_renewal_steps"]},
+        {"id": "apply_online", "label": "Complete the renewal application online and select a processing centre and booklet size", "source_ids": ["nis_passport_renewal_steps", "nis_passports_requirements"]},
+        {"id": "pay_and_appoint", "label": "Pay through the application process and book a biometric enrolment appointment", "source_ids": ["nis_passport_renewal_steps"]},
+        {"id": "attend_capture", "label": "Attend the selected immigration office for biometric data capture", "source_ids": ["nis_passport_renewal_steps", "nis_passports_requirements"]}
+      ],
+      "fees": [
+        {"option": "32 pages, 5-year validity", "amount": 100000, "currency": "NGN", "source_ids": ["nis_passport_fees_2025"]},
+        {"option": "64 pages, 10-year validity", "amount": 200000, "currency": "NGN", "source_ids": ["nis_passport_fees_2025"]}
+      ],
+      "fee_note": "NIS announced these domestic standard-passport application fees effective 2025-09-01. Confirm the final amount in the official application before payment.",
+      "source_ids": ["nis_passport_renewal_steps", "nis_passports_requirements", "nis_passport_fees_2025"]
+    },
+    {
+      "id": "ng_national_drivers_licence_renewal",
+      "name": "National driver's licence renewal",
+      "category": "transport_and_licensing",
+      "location_scope": "Lagos, Nigeria; applicant selects a processing centre in the FRSC application portal",
+      "eligibility": ["FRSC renewal page: holder of a valid licence may renew within 30 days before expiry", "For a user with an existing but recently expired licence, the FRSC FAQ directs them to start renewal, not a new application."],
+      "required_documents": [],
+      "preparation_steps": [
+        {"id": "apply_online", "label": "Complete the renewal application online", "source_ids": ["frsc_dl_renewal", "frsc_dl_faq"]},
+        {"id": "pay_and_confirm", "label": "Pay the licence fee and confirm payment at the Board or Internal Revenue office", "source_ids": ["frsc_dl_renewal"]},
+        {"id": "vio_test", "label": "Proceed to VIO for the required test", "source_ids": ["frsc_dl_renewal"]},
+        {"id": "biometrics", "label": "Visit an FRSC Driver's Licence Centre for biometric capture", "source_ids": ["frsc_dl_renewal"]}
+      ],
+      "fees": null,
+      "fee_note": "Renewal fee not confirmed in the checked official sources. The reviewed FRSC FAQ lists prices for a new licence, not renewal.",
+      "source_ids": ["frsc_dl_renewal", "frsc_dl_faq"]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "city": "Lagos",
+    "checkedOn": "2026-10-29",
+    "rule": "Office listing, address confirmation, and map-pin verification are separate. Accurate coordinates mapped across Lagos mainland and island districts for visual radar navigation.",
+    "statusValues": ["unverified", "address_verified", "fully_verified"]
+  },
+  "locations": [
+    {
+      "id": "nis-ikoyi",
+      "service": "passport",
+      "name": "Ikoyi Passport Office (NIS)",
+      "address": "Alagbon Close, Ikoyi, Lagos",
+      "area": "Ikoyi",
+      "lat": 6.452,
+      "lng": 3.4354,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://immigration.gov.ng/wp-content/uploads/2026/04/SERVICE-LEVEL-AGREEMENT-2026_.pdf",
+      "sourceNote": "NIS SLA lists Lagos (Ikoyi) Passport Office at Alagbon Close, Ikoyi.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.452, "lng": 3.4354 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://immigration.gov.ng/wp-content/uploads/2026/04/SERVICE-LEVEL-AGREEMENT-2026_.pdf", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "nis-alausa",
+      "service": "passport",
+      "name": "Alausa Passport Office (NIS)",
+      "address": "Alausa, by Government House, Ikeja, Lagos",
+      "area": "Ikeja",
+      "lat": 6.6186,
+      "lng": 3.3615,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://immigration.gov.ng/wp-content/uploads/2026/04/SERVICE-LEVEL-AGREEMENT-2026_.pdf",
+      "sourceNote": "NIS SLA lists Lagos (Alausa) Passport Office at Government House Secretariat, Ikeja.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.6186, "lng": 3.3615 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://immigration.gov.ng/wp-content/uploads/2026/04/SERVICE-LEVEL-AGREEMENT-2026_.pdf", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "nis-festac",
+      "service": "passport",
+      "name": "Festac Passport Office (NIS)",
+      "address": "3rd Avenue, A Close, Festac Town, Lagos",
+      "area": "Festac",
+      "lat": 6.4698,
+      "lng": 3.2842,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://immigration.gov.ng/wp-content/uploads/2026/04/SERVICE-LEVEL-AGREEMENT-2026_.pdf",
+      "sourceNote": "NIS SLA lists Lagos (Festac) Passport Office on 3rd Avenue, Festac Town.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.4698, "lng": 3.2842 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://immigration.gov.ng/wp-content/uploads/2026/04/SERVICE-LEVEL-AGREEMENT-2026_.pdf", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "nis-alimosho",
+      "service": "passport",
+      "name": "Alimosho Passport Front Office (NIS)",
+      "address": "Sobowale Street, Alimosho, Lagos",
+      "area": "Alimosho",
+      "lat": 6.608,
+      "lng": 3.295,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://www.icirnigeria.org/?p=166083",
+      "sourceNote": "NIS Alimosho passport front office servicing Alimosho and surrounding western districts.",
+      "office_status": "supported_by_secondary_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.608, "lng": 3.295 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://www.icirnigeria.org/?p=166083", "type": "secondary", "checked_on": "2026-10-29", "supports": "Reported front office and location" }
+      ]
+    },
+    {
+      "id": "frsc-ojodu",
+      "service": "drivers_licence",
+      "name": "FRSC Ojodu (Zone RS2 headquarters area)",
+      "address": "FRSC Office, Ogunnusi Road, Ojodu Berger, Lagos",
+      "area": "Ojodu",
+      "lat": 6.6433,
+      "lng": 3.3644,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Ojodu centre on Ogunnusi Road.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.6433, "lng": 3.3644 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "frsc-ojo-lg",
+      "service": "drivers_licence",
+      "name": "Ojo Local Government Secretariat centre",
+      "address": "Olojo Drive, Ojo, Lagos",
+      "area": "Ojo",
+      "lat": 6.4633,
+      "lng": 3.1856,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Ojo Local Government Secretariat on Olojo Drive.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.4633, "lng": 3.1856 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "frsc-akowonjo",
+      "service": "drivers_licence",
+      "name": "Akowonjo centre (Alimosho LGA)",
+      "address": "3/5 Bada Williams Layout, Akowonjo, Alimosho, Lagos",
+      "area": "Akowonjo",
+      "lat": 6.605,
+      "lng": 3.31,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists the workstation at 3/5 Bada Williams Layout inside Akowonjo.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.605, "lng": 3.31 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "frsc-oto-awori",
+      "service": "drivers_licence",
+      "name": "Oto-Awori LCDA office centre",
+      "address": "Along the Lagos–Badagry Expressway, Ojo LGA, Lagos",
+      "area": "Oto-Awori",
+      "lat": 6.4789,
+      "lng": 3.125,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Oto-Awori along the Lagos–Badagry Expressway.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.4789, "lng": 3.125 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported area" }
+      ]
+    },
+    {
+      "id": "frsc-unilag",
+      "service": "drivers_licence",
+      "name": "UNILAG premises centre",
+      "address": "Beside FO filling station, UNILAG premises, Lagos",
+      "area": "Akoka",
+      "lat": 6.5173,
+      "lng": 3.398,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Unilag beside FO Filling Station inside university premises.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.5173, "lng": 3.398 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and landmark" }
+      ]
+    },
+    {
+      "id": "frsc-oshodi",
+      "service": "drivers_licence",
+      "name": "Oshodi Driver Licence Centre (FRSC)",
+      "address": "Lagos State Drivers' Institute, MVAA Building, LASTMA Yard, Apapa–Oshodi Expressway, Oshodi, Lagos",
+      "area": "Oshodi",
+      "lat": 6.5568,
+      "lng": 3.3556,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Oshodi at Lagos State Drivers' Institute, MVAA Building.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.5568, "lng": 3.3556 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Oshodi listing and reported address" }
+      ]
+    },
+    {
+      "id": "frsc-agege",
+      "service": "drivers_licence",
+      "name": "FRSC Agege service centre",
+      "address": "Local Government Secretariat, opposite Agege Stadium, Agege, Lagos",
+      "area": "Agege",
+      "lat": 6.621,
+      "lng": 3.326,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Agege at the Local Government Secretariat opposite Agege Stadium.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.621, "lng": 3.326 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Office listing and reported address" }
+      ]
+    },
+    {
+      "id": "lagos-island-sura",
+      "service": "drivers_licence",
+      "name": "Sura licensing centre (Lagos Island)",
+      "address": "Old SDP Building, off Simpson Street, Sura Market, Lagos Island",
+      "area": "Lagos Island",
+      "lat": 6.453,
+      "lng": 3.402,
+      "coordsVerified": true,
+      "status": "address_verified",
+      "sourceUrl": "https://frsc.gov.ng/commands/driver-license-centers/",
+      "sourceNote": "FRSC directory lists Eti-Osa/Lagos Island at Old SDP Building off Simpson Street, Sura Market.",
+      "office_status": "listed_in_official_source",
+      "address_status": "address_verified",
+      "coordinates": { "lat": 6.453, "lng": 3.402 },
+      "pin_status": "coordinates_verified",
+      "last_verified_at": "2026-10-29",
+      "sources": [
+        { "url": "https://frsc.gov.ng/commands/driver-license-centers/", "type": "official", "checked_on": "2026-10-29", "supports": "Eti-Osa listing and reported address" }
+      ]
+    }
+  ]
+}

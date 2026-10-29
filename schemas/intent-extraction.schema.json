@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://queueless.local/schemas/intent-extraction.schema.json",
+  "title": "QueueLess Request Intent Signals",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_summary", "missing", "urgent"],
+  "properties": {
+    "request_summary": { "type": "string", "minLength": 1, "maxLength": 180 },
+    "missing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ng_standard_passport_renewal", "ng_national_drivers_licence_renewal"],
+      "properties": {
+        "ng_standard_passport_renewal": { "$ref": "#/$defs/missingItems" },
+        "ng_national_drivers_licence_renewal": { "$ref": "#/$defs/missingItems" }
+      }
+    },
+    "urgent": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["ng_standard_passport_renewal", "ng_national_drivers_licence_renewal"] }
+    }
+  },
+  "$defs": {
+    "missingItems": {
+      "type": "array",
+      "maxItems": 20,
+      "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "checked_on": "2026-10-21",
+  "sources": [
+    {
+      "id": "nis_passport_renewal_steps",
+      "title": "Renewal of Passport — Nigeria Immigration Service",
+      "url": "https://immigration.gov.ng/info-center/renewal-of-passport/",
+      "checked_on": "2026-10-21",
+      "covers": ["NIN verification", "current passport details", "ICAO-compliant photo", "application workflow", "appointment and biometric enrollment"]
+    },
+    {
+      "id": "nis_passports_requirements",
+      "title": "Passports — Nigeria Immigration Service",
+      "url": "https://immigration.gov.ng/passports/",
+      "checked_on": "2026-10-21",
+      "covers": ["standard passport renewal requirements", "passport data page", "birth certificate or age declaration", "state of origin certificate", "in-person appearance"]
+    },
+    {
+      "id": "nis_passport_fees_2025",
+      "title": "NIS standard passport fee review — Nigeria Immigration Service",
+      "url": "https://immigration.gov.ng/nigeria-immigration-service-announces-upward-review-of-nigerian-standard-passport-fees/",
+      "checked_on": "2026-10-21",
+      "covers": ["domestic standard passport application fees effective 2025-09-01"]
+    },
+    {
+      "id": "frsc_dl_renewal",
+      "title": "Nigeria Driver's Licence — FRSC official portal, renewal",
+      "url": "https://nigeriadriverslicence.frsc.gov.ng/?page=470",
+      "checked_on": "2026-10-21",
+      "covers": ["renewal eligibility window", "online application", "payment confirmation", "VIO test", "biometric capture"]
+    },
+    {
+      "id": "frsc_dl_faq",
+      "title": "Frequently Asked Questions — FRSC Driver's Licence portal",
+      "url": "https://nigeriadriverslicence.frsc.gov.ng/faq",
+      "checked_on": "2026-10-21",
+      "covers": ["renewal menu", "applicant presence", "renewal versus reissue distinction", "licence number for upgrade", "new licence fees only"]
+    }
+  ]
+}

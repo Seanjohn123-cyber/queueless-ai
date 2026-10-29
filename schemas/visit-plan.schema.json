@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://queueless.local/schemas/visit-plan.schema.json",
+  "title": "QueueLess AI Visit Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_summary", "pilot_location", "services", "stops", "order_basis", "queue_status", "sources", "uncertainties"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "request_summary": {"type": "string", "minLength": 1},
+    "pilot_location": {
+      "type": "object", "additionalProperties": false,
+      "required": ["city", "state", "country"],
+      "properties": {"city": {"const": "Lagos"}, "state": {"const": "Lagos State"}, "country": {"const": "Nigeria"}}
+    },
+    "services": {
+      "type": "array", "minItems": 1, "maxItems": 2,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["service_id", "status", "eligibility", "checklist", "steps", "fees", "fee_note"],
+        "properties": {
+          "service_id": {"enum": ["ng_standard_passport_renewal", "ng_national_drivers_licence_renewal"]},
+          "status": {"enum": ["supported", "unsupported", "needs_clarification"]},
+          "eligibility": {"type": "array", "items": {"type": "string"}},
+          "checklist": {"type": "array", "items": {"$ref": "#/$defs/checklistItem"}},
+          "steps": {"type": "array", "items": {"type": "string"}},
+          "fees": {"type": "array", "items": {"$ref": "#/$defs/fee"}}
+          ,"fee_note": {"type": "string"}
+        }
+      }
+    },
+    "stops": {
+      "type": "array", "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["order", "service_id", "visit_mode", "location_name", "reason"],
+        "properties": {
+          "order": {"type": "integer", "minimum": 1},
+          "service_id": {"enum": ["ng_standard_passport_renewal", "ng_national_drivers_licence_renewal"]},
+          "visit_mode": {"enum": ["online", "in_person", "unknown"]},
+          "location_name": {"type": ["string", "null"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "order_basis": {"type": "string", "minLength": 1},
+    "queue_status": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "service_id", "wait_minutes", "observed_at", "confidence", "reason"],
+      "properties": {
+        "status": {"enum": ["unknown", "estimated"]},
+        "service_id": {"type": ["string", "null"]},
+        "wait_minutes": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": false, "required": ["min", "max"], "properties": {"min": {"type": "integer", "minimum": 0}, "max": {"type": "integer", "minimum": 0}}}]},
+        "observed_at": {"type": ["string", "null"], "format": "date-time"},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "reason": {"type": "string", "minLength": 1},
+        "data_window": {"oneOf": [{"type": "null"}, {"type": "object", "additionalProperties": false, "required": ["from", "to", "observations"], "properties": {"from": {"type": "string", "format": "date-time"}, "to": {"type": "string", "format": "date-time"}, "observations": {"type": "integer", "minimum": 1}}}]}
+      }
+    },
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "uncertainties": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "checklistItem": {
+      "type": "object", "additionalProperties": false,
+      "required": ["item_id", "label", "status", "source_ids"],
+      "properties": {
+        "item_id": {"type": "string"},
+        "label": {"type": "string"},
+        "status": {"enum": ["required", "conditional", "not_stated"]},
+        "source_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "fee": {
+      "type": "object", "additionalProperties": false,
+      "required": ["amount", "currency", "option", "source_ids"],
+      "properties": {"amount": {"type": "number", "minimum": 0}, "currency": {"const": "NGN"}, "option": {"type": "string"}, "source_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}}}
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_id", "title", "url", "checked_on"],
+      "properties": {"source_id": {"type": "string"}, "title": {"type": "string"}, "url": {"type": "string", "format": "uri"}, "checked_on": {"type": "string", "format": "date"}}
+    }
+  }
+}
